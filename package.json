@@ -20,7 +20,7 @@
     "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
     "watch:browsersync": "node_modules/.bin/browser-sync start --server --files css/*.css *.html",
     "startServer": "http-server",
-    "startBabel": "babel script.js --watch --out-file script-compiled.js"
+    "babel": "babel js/script.js --watch --out-file script-compiled.js"
   },
   "keywords": [],
   "author": "",
