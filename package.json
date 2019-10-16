@@ -18,20 +18,15 @@
     "watch": "npm-run-all build -p watch:*",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
     "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
-    "watch:browsersync": "node_modules/.bin/browser-sync start --server --files css/*.css *.html",
-    "startServer": "http-server",
-    "babel": "babel js/script.js --watch --out-file script-compiled.js"
+    "watch:browsersync": "node_modules/.bin/browser-sync start --server --files css/*.css *.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-latest": "^6.24.1",
     "browser-sync": "^2.26.5",
     "globstar": "^1.0.0",
-    "http-server": "^0.9.0",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
     "nu-html-checker": "^0.1.0",

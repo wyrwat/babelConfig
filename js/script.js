@@ -19,15 +19,14 @@ multiply();
 //3
 console.log('3 exercise:');
 let avarege = (...args) => {
-    let sum = 0;
-    for (let arg of args) {
-        sum += arg;
-    }
-    return sum / args.length;
+    let total = arg.reduce(function(a, b){
+        return a + b;
+    });
+        return total / args.length;
 }
 console.log(avarege(1));
 console.log(avarege(1,3));
-console.log(avarege(1,3,6,6));
+console.log(avarege(1, 3, 6, 6));
 
 //4
 console.log('4 exercise:');
